@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cricket Website - Frames</title>
+</head>
+
+<!-- Main frameset: 3 rows -->
+<frameset rows="20%, 10%, 70%">
+  
+  <!-- Row 1: 2 columns (logo | header) -->
+  <frameset cols="20%, 80%">
+    <frame src="logo.html" name="logoFrame">
+    <frame src="header.html" name="headerFrame">
+  </frameset>
+
+  <!-- Row 2: navigation bar (we’ll layout links inside this frame) -->
+  <frame src="menu.html" name="menuFrame">
+
+  <!-- Row 3: 2 columns (services | main content) -->
+  <frameset cols="25%, 75%">
+    <frame src="services.html" name="servicesFrame">
+    <!-- bottom-right frame where all pages will load -->
+    <frame src="home.html" name="contentFrame">
+  </frameset>
+
+  <noframes>
+    Your browser does not support frames.
+  </noframes>
+
+</frameset>
+</html>
